@@ -1,9 +1,34 @@
-<! DOCTYPE html>
-<html>
-  <head>
-    <title>gkemhcs</title>
-  </head>
-  <body>
-    <h1>WELCOME TO MY WEBSITE</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Global Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('header.html').then(response => response.text()).then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <section class="summary">
+        <h2>Summary</h2>
+        <p>An experienced DevOps Engineer specializing in cloud-native solutions, infrastructure automation, and CI/CD pipelines.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Cloud Platforms: AWS, GCP, Azure</li>
+            <li>Infrastructure as Code: Terraform, Ansible</li>
+            <li>CI/CD: Jenkins, GitLab CI</li>
+            <li>Backend Development: Python, Node.js</li>
+            <li>Observability: Prometheus, Grafana</li>
+        </ul>
+    </section>
+</body>
 </html>
