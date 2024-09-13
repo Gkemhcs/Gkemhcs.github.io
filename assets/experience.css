@@ -1,0 +1,119 @@
+/* Experience Page Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    background-color: #f9f9f9; /* Ensure header has a background */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.name-role {
+    display: flex;
+    flex-direction: column;
+}
+
+.role {
+    font-size: 1.2em; /* Adjusted font size */
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.work-history, .education {
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space below header */
+}
+
+.company-icon {
+    width: 50px; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    margin-right: 15px; /* Space between icon and text */
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.card-header p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.card-body p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.card-body strong {
+    font-weight: 600;
+}

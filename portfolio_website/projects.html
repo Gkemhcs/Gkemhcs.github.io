@@ -3,65 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Projects - Koti Eswar Mani Gudi</title>
+    
+    <link rel="stylesheet" href="../assets/projects.css">
     <link rel="stylesheet" href="../assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function togglePopover(id) {
+            const popover = document.getElementById(id);
+            if (popover) {
+                popover.classList.toggle('show');
+            } else {
+                console.error('Popover element not found:', id);
+            }
+        }
+    </script>
 </head>
 <body>
-    <!-- Global Header -->
     <header>
         <div class="profile">
-            <img src="../assets/photo.png" alt="Your Profile Picture" class="profile-pic">
-            <h1>Your Name</h1>
-            <p>DevOps Engineer | Cloud Architect</p>
+            <img src="../assets/photo.png" alt="Koti Eswar Mani Gudi" class="profile-pic">
+            <h1>KOTI ESWAR MANI GUDI</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/portfolio_website/projects.html">Projects</a></li>
+                <li><a href="/portfolio_website/certifications.html">Certifications</a></li>
+                <li><a href="/portfolio_website/experience.html">Experience</a></li>
+                <li><a href="/portfolio_website/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section class="projects">
-        <h1>Projects</h1>
-
-        <!-- Project 1 Card -->
-        <div class="project-card">
-            <h2>Vikraya Ecommerce Microservice</h2>
-            <img src="../assets/architecture-diagram1.png" alt="Architecture Diagram">
-            <h3>Tools Used</h3>
-            <p>Docker, Kubernetes, MongoDB, Python</p>
-            <h3>Key Points</h3>
-            <ul>
-                <li>Microservice architecture for ecommerce platform</li>
-                <li>Deployed using Kubernetes with Helm charts</li>
-                <li>Implemented CI/CD pipeline with Jenkins</li>
-            </ul>
-            <a href="https://github.com/your-repo-link" target="_blank">
-                <img src="../assets/github-icon.png" alt="GitHub Repo" class="github-icon">
-            </a>
-        </div>
-
-        <!-- Project 2 Card -->
-        <div class="project-card">
-            <h2>Multi-Tier Race Game</h2>
-            <img src="../assets/architecture-diagram2.png" alt="Architecture Diagram">
-            <h3>Tools Used</h3>
-            <p>Unity, C#, Firebase, AWS Lambda</p>
-            <h3>Key Points</h3>
-            <ul>
-                <li>Real-time multi-tier game with leaderboards</li>
-                <li>Cloud functions for handling user data</li>
-                <li>Integrated Firebase for authentication and hosting</li>
-            </ul>
-            <a href="https://github.com/your-repo-link" target="_blank">
-                <img src="../assets/github-icon.png" alt="GitHub Repo" class="github-icon">
-            </a>
-        </div>
-    </section>
+    <main>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img src="../assets/architecture-diagram1.png" alt="Vikraya Ecommerce Microservice Architecture">
+                    <h3>Vikraya Ecommerce Microservice</h3>
+                    <button onclick="togglePopover('project1-details')">Project Details</button>
+                    <a href="https://github.com/your-repo/vikraya-ecommerce-microservice" target="_blank" class="github-link">
+                        <img src="../assets/github-icon-placeholder.png" alt="GitHub"> GitHub Link
+                    </a>
+                    <div id="project1-details" class="popover">
+                        <p><strong>Tools Used:</strong> Docker, Kubernetes, MongoDB, Python</p>
+                        <p><strong>Description:</strong> Developed a scalable ecommerce microservice architecture. Implemented CI/CD pipelines using Kubernetes and Docker. Integrated MongoDB for efficient data storage and retrieval.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="../assets/architecture-diagram2.png" alt="Multi-Tier Race Game Architecture">
+                    <h3>Multi-Tier Race Game</h3>
+                    <button onclick="togglePopover('project2-details')">Project Details</button>
+                    <a href="https://github.com/your-repo/multi-tier-race-game" target="_blank" class="github-link">
+                        <img src="../assets/github-icon-placeholder.png" alt="GitHub"> GitHub Link
+                    </a>
+                    <div id="project2-details" class="popover">
+                        <p><strong>Tools Used:</strong> Unity, C#, Firebase, AWS Lambda</p>
+                        <p><strong>Description:</strong> Created a multi-tier race game using Unity and C#. Utilized Firebase for real-time data management and AWS Lambda for serverless functions. Enhanced user experience with scalable cloud infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Koti Eswar Mani Gudi. All rights reserved.</p>
+    </footer>
 </body>
 </html>

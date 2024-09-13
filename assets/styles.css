@@ -1,122 +1,95 @@
-/* styles.css */
-
-body {
+/* Basic reset for margins */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+/* Fonts */
+body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f06, #4a90e2);
+    background-color: #ffffff;
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+h1 {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-p {
-    font-weight: 400;
-    color: #fff;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-a {
-    color: #4a90e2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.summary, .contact {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 
-.summary h2, .contact h1 {
-    color: #333;
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
+/* Header and Navigation */
 header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #282c34;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
 }
 
-.profile {
-    margin-bottom: 1rem;
+.profile-container {
+    display: flex;
+    align-items: center;
 }
 
 .profile-pic {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
 }
 
-h1 {
-    margin: 0.5rem 0;
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.name-role {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-role .role {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #61dafb;
+nav a {
     text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Sections */
 section {
-    margin: 2rem auto;
-    max-width: 800px;
-    padding: 1rem;
-}
-
-.projects {
-    margin-top: 2rem;
-}
-
-.project-card {
+    margin: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    background-color: #fff;
-}
-
-.project-card img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.github-icon {
-    width: 24px;
-    height: 24px;
 }

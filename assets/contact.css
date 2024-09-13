@@ -1,0 +1,87 @@
+/* Basic styling for the contact page */
+.contact {
+    margin: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Adjust font size if needed */
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #333; /* Ensure link color is visible */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icon img {
+    width: 50px; /* Consistent size for social media icons */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the profile image */
+.profile img {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Expertise and Invitation Block */
+.expertise-invite {
+    background-color: #e9f5f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.expertise-invite h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.expertise-invite p {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
