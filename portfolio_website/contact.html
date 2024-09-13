@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <!-- Global Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header.html').then(response => response.text()).then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <section>
+        <h1>Contact</h1>
+        <p>Email: your.email@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <!-- Global Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header.html').then(response => response.text()).then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <section>
+        <h1>Education</h1>
+        <h2>Bachelor's in Computer Science</h2>
+        <p>University Name, Graduation Year</p>
+    </section>
+</body>
+</html>

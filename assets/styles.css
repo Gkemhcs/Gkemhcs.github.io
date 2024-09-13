@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #282c34;
+    color: white;
+}
+
+.profile {
+    margin-bottom: 1rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.projects {
+    margin-top: 2rem;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background-color: #fff;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.github-icon {
+    width: 24px;
+    height: 24px;
+}

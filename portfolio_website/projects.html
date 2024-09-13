@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <!-- Global Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header.html').then(response => response.text()).then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <section class="projects">
+        <h1>Projects</h1>
+
+        <!-- Project 1 Card -->
+        <div class="project-card">
+            <h2>Vikraya Ecommerce Microservice</h2>
+            <img src="../assets/architecture-diagram1.png" alt="Architecture Diagram">
+            <h3>Tools Used</h3>
+            <p>Docker, Kubernetes, MongoDB, Python</p>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Microservice architecture for ecommerce platform</li>
+                <li>Deployed using Kubernetes with Helm charts</li>
+                <li>Implemented CI/CD pipeline with Jenkins</li>
+            </ul>
+            <a href="https://github.com/your-repo-link" target="_blank">
+                <img src="../assets/github-icon.png" alt="GitHub Repo" class="github-icon">
+            </a>
+        </div>
+
+        <!-- Project 2 Card -->
+        <div class="project-card">
+            <h2>Multi-Tier Race Game</h2>
+            <img src="../assets/architecture-diagram2.png" alt="Architecture Diagram">
+            <h3>Tools Used</h3>
+            <p>Unity, C#, Firebase, AWS Lambda</p>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Real-time multi-tier game with leaderboards</li>
+                <li>Cloud functions for handling user data</li>
+                <li>Integrated Firebase for authentication and hosting</li>
+            </ul>
+            <a href="https://github.com/your-repo-link" target="_blank">
+                <img src="../assets/github-icon.png" alt="GitHub Repo" class="github-icon">
+            </a>
+        </div>
+    </section>
+</body>
+</html>
