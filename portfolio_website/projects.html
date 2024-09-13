@@ -7,23 +7,16 @@
     
     <link rel="stylesheet" href="../assets/projects.css">
     <link rel="stylesheet" href="../assets/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-        function togglePopover(id) {
-            const popover = document.getElementById(id);
-            if (popover) {
-                popover.classList.toggle('show');
-            } else {
-                console.error('Popover element not found:', id);
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="profile">
-            <img src="../assets/photo.png" alt="Koti Eswar Mani Gudi" class="profile-pic">
-            <h1>KOTI ESWAR MANI GUDI</h1>
+        <div class="profile-container">
+            <img src="../assets/photo.jpg" alt="Your Profile Picture" class="profile-pic">
+            <div class="name-role">
+                <h1>GUDI KOTI ESWAR MANI</h1>
+                <p class="role">DevOps Engineer | Cloud Engineer</p>
+            </div>
         </div>
         <nav>
             <ul>
@@ -40,28 +33,135 @@
             <h2>Projects</h2>
             <div class="project-container">
                 <div class="project">
-                    <img src="../assets/architecture-diagram1.png" alt="Vikraya Ecommerce Microservice Architecture">
-                    <h3>Vikraya Ecommerce Microservice</h3>
-                    <button onclick="togglePopover('project1-details')">Project Details</button>
-                    <a href="https://github.com/your-repo/vikraya-ecommerce-microservice" target="_blank" class="github-link">
-                        <img src="../assets/github-icon-placeholder.png" alt="GitHub"> GitHub Link
-                    </a>
-                    <div id="project1-details" class="popover">
-                        <p><strong>Tools Used:</strong> Docker, Kubernetes, MongoDB, Python</p>
-                        <p><strong>Description:</strong> Developed a scalable ecommerce microservice architecture. Implemented CI/CD pipelines using Kubernetes and Docker. Integrated MongoDB for efficient data storage and retrieval.</p>
+                    <div class="project-content">
+                        <h3>Vikraya Ecommerce Microservice</h3>
+                        <div class="tools-used">
+                            <p><strong>Tools Used:</strong>Google Kubernetes Engine,Anthos Service Mesh,Prometheus,Firestore,CloudRun,ApiGateway,Terraform</p>
+                        </div>
+                        <div class="description">
+                            <p><strong>Description:</strong></p>
+                            <ul style="list-style-type:circle">
+                                <b> A simple ecommerce deployed in multiple GKE clusters and served through Multi-Cluster-Gateway</b>
+                          <li> Orchestrated an e-commerce platform across multiple GKE clusters with a multi-cluster gateway for seamless service delivery across Global users.</li>     
+<li>Implemented microservices architecture including frontend, authentication, cart, catalog, and order services, deployed as Kubernetes deployments and services.</li>
+<li>Ensured efficient and scalable session management with Redis Memorystore, while utilizing Cloud Firestore for robust data storage of user, catalog, and order information.
+</li>
+<li>Incorporated logging with Python library, Prometheus metrics for monitoring, and API gateway backed by Cloud Run for enhanced vector search capabilities .
+</li>
+                            </ul>
+                        </div>
+                        <a href="../assets/vikraya-architecture.jpg" class="view-architecture" target="_blank">View Architecture</a>
                     </div>
+                    <a href="https://github.com/Gkemhcs/vikraya-ecommerce.git" target="_blank" class="github-link">
+                        <img src="../assets/github.png" alt="GitHub">
+                    </a>
+                </div>
+                
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Serverless MicroServices Deployment in Azure</h3>
+                        <div class="tools-used">
+                            <p><strong>Tools Used:</strong>Azure Container Apps,Azure File Shares,Azure Blob Storage,Dapr,Azure Postgres Flexible Server,Azure Bicep</p>
+                        </div>
+                        <div class="description">
+                            <p><strong>Description:</strong></p>
+                            <ul style="list-style-type:circle">
+                                <li>Deploys key services like text-to-speech and PDF-to-DOCX conversion using Azure’s serverless platform, minimizing infrastructure concerns.</li>
+                                <li> Uses Azure Blob Storage with SAS for secure file access and Dapr for microservice communication.</li>
+                                <li>Combines Azure Container Apps, PostgreSQL, and Google Sign-In for a seamless, scalable, and secure solution.</li>
+                            </ul>
+                        </div>
+                        <a href="../assets/azure-architecture-serverless.jpg" class="view-architecture" target="_blank">View Architecture</a>
+                    </div>
+                    <a href="https://github.com/Gkemhcs/converter-project-azure-serverless.git" target="_blank" class="github-link">
+                        <img src="../assets/github.png" alt="GitHub">
+                    </a>
                 </div>
                 <div class="project">
-                    <img src="../assets/architecture-diagram2.png" alt="Multi-Tier Race Game Architecture">
-                    <h3>Multi-Tier Race Game</h3>
-                    <button onclick="togglePopover('project2-details')">Project Details</button>
-                    <a href="https://github.com/your-repo/multi-tier-race-game" target="_blank" class="github-link">
-                        <img src="../assets/github-icon-placeholder.png" alt="GitHub"> GitHub Link
-                    </a>
-                    <div id="project2-details" class="popover">
-                        <p><strong>Tools Used:</strong> Unity, C#, Firebase, AWS Lambda</p>
-                        <p><strong>Description:</strong> Created a multi-tier race game using Unity and C#. Utilized Firebase for real-time data management and AWS Lambda for serverless functions. Enhanced user experience with scalable cloud infrastructure.</p>
+                    <div class="project-content">
+                        <h3>GenAI Url Digest  Website with enabled CI/CD</h3>
+                        <div class="tools-used">
+                            <p><strong>Tools Used:</strong>GKE,OpenTelemetry,Jenkins,Ansible,Terraform,Langchain,PGVector</p>
+                        </div>
+                        <div class="description">
+                            <p><strong>Description:</strong></p>
+                            <ul style="list-style-type:circle">
+                                <li>GenAI-RAG web app built with the LangChain framework and deployed in GKE as a microservice, including both frontend and backend.</li>
+                                <li> Improved observability with OpenTelemetry distributed tracing and set up continuous integration with Jenkins pipelines and continuous deployment with Argo CD</li>
+                                <li>Ansible to configure the Jenkins master node, and Terraform to deploy the infrastructure.</li>
+                                <li>Local deployment using Docker compose</li>
+                            </ul>
+                        </div>
+                        <a href="../assets/genaiurldigest-architecture.jpg" class="view-architecture" target="_blank">View Architecture</a>
                     </div>
+                    <a href="https://github.com/Gkemhcs/genai-url-digest.git" target="_blank" class="github-link">
+                        <img src="../assets/github.png" alt="GitHub">
+                    </a>
+                </div>
+               
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Youtube-Summarizer-to-Text</h3>
+                        <div class="tools-used">
+                            <p><strong>Tools Used:</strong>Cloud Run,Cloud Functions,Google Text to Speech API,Vertex AI Gemini,Cloud Storage Signed URL'S</p>
+                        </div>
+                        <div class="description">
+                            <p><strong>Description:</strong></p>
+                            <ul style="list-style-type:circle">
+                                <b>A simple serverless website-api which takes a youtube video url and converts the summarized yt  transcripts into audio_file and generates a QR-Code to download the audio_file.
+                                </b>
+                                <li>Developed a serverless API using Cloud Functions and Cloud Run to process YouTube video transcripts seamlessly</li>
+                                <li> Orchestrated functions such as Transcript-Loader, Summariser, and Text-to-Speech Converter to efficiently process and summarize transcripts, converting them into speech</li>
+                                <li>Used Vertex AI Gemini for summarization and google cloud text-to-speech api  to convert text into speech</li>
+                               
+                            </ul>
+                        </div>
+                        <a href="../assets/yt-summarizer-architecture.jpg" class="view-architecture" target="_blank">View Architecture</a>
+                    </div>
+                    <a href="https://github.com/Gkemhcs/youtube-summarizer-to-speech.git" target="_blank" class="github-link">
+                        <img src="../assets/github.png" alt="GitHub">
+                    </a>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Integrating Cloud Deploy with Github-Actions</h3>
+                        <div class="tools-used">
+                            <p><strong>Tools Used:</strong>Google Kubernetes Engine,Cloud Deploy,Github Actions,Workload Identity Federation</p>
+                        </div>
+                        <div class="description">
+                            <p><strong>Description:</strong></p>
+                            <ul style="list-style-type:circle">
+                                
+                                <li> Designed and implemented a secure CI/CD pipeline using Google Cloud Deploy and GitHub Actions,   authenticating seamlessly via Workload Identity Federation (WIF) and GitHub OIDC</li>
+                               
+                               
+                            </ul>
+                        </div>
+                        <a href="../assets/gh-actions-cloud-deploy.jpg" class="view-architecture" target="_blank">View Architecture</a>
+                    </div>
+                    <a href="https://github.com/Gkemhcs/gh-actions-cloud-deploy-project.git" target="_blank" class="github-link">
+                        <img src="../assets/github.png" alt="GitHub">
+                    </a>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Multi-Tier Race Game</h3>
+                        <div class="tools-used">
+                            <p><strong>Tools Used:</strong> Google Compute Engine,Cloud Load Balancing,Cloud SQL</p>
+                        </div>
+                        <div class="description">
+                            <p><strong>Description:</strong></p>
+                            <ul>
+                                <li>Developed a multi-tiered race game using HTML, JavaScript, and Node.js for the backend, facilitating user engagement and interaction</li>
+                                <li>Utilized managed instance groups (MIGs) across two zones to serve frontend content, accessible globally via a global HTTP load balancer, ensuring high availability and scalability.     </li>
+                                <li>Designed an internal HTTP load balancer to facilitate communication between frontend MIGs and backend instance groups in a zone. This allows efficient transmission of user scores to Cloud SQL for storage in a leaderboard table.  </li>
+                            </ul>
+                        </div>
+                        <a href="../assets/multi-tier-architecture-simple.png" class="view-architecture" target="_blank">View Architecture</a>
+                    </div>
+                    <a href="https://github.com/Gkemhcs/simple-mutli-tier-race-game.git" target="_blank" class="github-link">
+                        <img src="../assets/github.png" alt="GitHub">
+                    </a>
                 </div>
             </div>
         </section>
