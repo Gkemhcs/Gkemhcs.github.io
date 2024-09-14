@@ -49,26 +49,43 @@
     margin-bottom: 5px; /* Add spacing between list items */
 }
 
+/* Custom scrollbar */
+.description::-webkit-scrollbar {
+    width: 10px;
+}
+
+.description::-webkit-scrollbar-thumb {
+    background-color: #0056b3; /* Thumb color */
+    border-radius: 10px; /* Rounded scrollbar */
+    border: 2px solid #fff; /* Adds contrast */
+}
+
+.description::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+}
+
 /* Button styling */
 .view-architecture {
     display: inline-block;
-    background-color: #0056b3; /* More professional color */
+    background-color: #0077cc; /* Professional blue tone */
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
-    padding: 10px 15px; /* Adjust padding for a balanced look */
-    margin-top: 20px; /* Added gap between description and button */
+    border-radius: 6px;
+    padding: 10px 20px; /* Adjust padding for balance */
+    margin-top: 20px; /* Space between description and button */
     font-size: 0.9em;
+    font-weight: 600;
     cursor: pointer;
     position: absolute;
     bottom: 10px;
     left: 10px; /* Align with GitHub icon */
-    border: 1px solid transparent; /* Add border for better contrast */
-    transition: background-color 0.3s, border 0.3s; /* Smooth transition */
+    border: 2px solid #0077cc;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
 }
+
 .view-architecture:hover {
-    background-color: #003d7a; /* Darker shade for hover effect */
-    border: 1px solid #0056b3; /* Visible border on hover */
+    background-color: #005f99; /* Darker shade for hover effect */
+    border-color: #005f99; /* Change border color on hover */
 }
 
 /* GitHub link styling */
@@ -81,11 +98,51 @@
     text-decoration: none;
     color: #007BFF;
 }
+
 .github-link img {
     width: 30px; /* Increased size */
     height: 30px; /* Increased size */
     margin-right: 5px;
 }
+
+.description {
+    overflow-y: auto;
+    max-height: 200px; /* Adjust based on your needs */
+    padding-right: 10px; /* To allow space for the scrollbar */
+}
+
+.description::-webkit-scrollbar {
+    width: 10px; /* Make the scrollbar thinner */
+}
+
+.description::-webkit-scrollbar-thumb {
+    background-color: black; /* Black scrollbar color */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.description::-webkit-scrollbar-track {
+    border: 1px solid #ddd; /* Border around the scrollbar */
+    background-color: #f1f1f1; /* Track color */
+}
+.view-architecture {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #000; /* Button background color */
+    color: #fff; /* Text color */
+    border: 2px solid #000; /* Border color */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.view-architecture:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
