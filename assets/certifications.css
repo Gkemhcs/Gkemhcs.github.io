@@ -1,10 +1,25 @@
 /* Certifications Page Specific Styles */
+.certifications-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Space to the right of each card */
+    margin-left: 20px;
+}
+
+
 .certification-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
+    margin-right: 20px; /* Space to the right of each card */
+    margin-left: 20px; 
     display: flex;
     align-items: center;
     gap: 15px;

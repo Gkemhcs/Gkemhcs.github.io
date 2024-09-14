@@ -36,11 +36,22 @@ header {
     align-items: center;
     padding: 20px;
     border-bottom: 2px solid #ddd;
+    position: relative;
+    background: #ffffff; /* Ensure header background is white */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: relative; /* For positioning the hamburger menu */
 }
 
 .profile-container {
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 .profile-pic {
@@ -58,6 +69,11 @@ header {
 .name-role {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.name-role h1 {
+    margin: 0;
 }
 
 .name-role .role {
@@ -67,29 +83,112 @@ header {
     margin-top: 5px;
 }
 
-nav ul {
+nav.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav.desktop-nav ul {
     display: flex;
     gap: 20px;
     font-weight: 500;
 }
 
-nav a {
+nav.desktop-nav a {
     text-decoration: none;
     font-weight: 600;
     color: #333;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+nav.desktop-nav a:hover {
     color: #007BFF;
 }
 
-/* Sections */
-section {
-    margin: 40px;
-    padding: 20px;
+nav.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjusted to be below header */
+    right: 20px;
+    background: #000; /* Black background for the dropdown */
+    border: 1px solid #000; /* Black border */
     border-radius: 8px;
-    background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
+    width: 200px;
+    padding: 20px;
+    z-index: 1000;
+}
+
+nav.mobile-nav.active {
+    display: block;
+}
+
+nav.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav.mobile-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff; /* White text color for better contrast */
+    transition: color 0.3s ease;
+}
+
+nav.mobile-nav a:hover {
+    color: #007BFF;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.desktop-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px; /* Adjusted to top right */
+        right: 20px;
+        background: #000; /* Black background for hamburger */
+        border: 1px solid #000; /* Black border */
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .hamburger-menu button {
+        background: #000; /* Black background for button */
+        border: none;
+        color: #fff; /* White color for icon */
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin: 0;
+    }
+
+    .name-role {
+        margin-top: 10px;
+    }
+
+    .name-role .role {
+        font-size: 1.2em;
+    }
 }

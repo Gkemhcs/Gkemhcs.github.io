@@ -85,3 +85,25 @@
     font-size: 16px;
     line-height: 1.6;
 }
+/* Ensure the container has a flexible layout */
+.contact-info p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow text to wrap */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact-info p {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .contact-info p img {
+        margin-bottom: 5px; /* Add some space between the icon and text */
+    }
+
+    .contact-info p a {
+        word-break: break-all; /* Break long words to prevent overflow */
+    }
+}

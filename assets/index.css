@@ -1,0 +1,73 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px; /* More rounded corners */
+    margin: 20px auto; /* Space around the section */
+    max-width: 1000px; /* Optional: limits width */
+}
+
+/* Summary Section */
+.summary {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px; /* More rounded corners */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Space around the section */
+    max-width: 1000px; /* Optional: limits width */
+}
+
+/* Skills Section */
+.skills {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px; /* More rounded corners */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Space around the section */
+    max-width: 1000px; /* Optional: limits width */
+}
+
+/* General Container Styles */
+section {
+    margin: 20px; /* Adds margin around all sections */
+}
+
+/* Additional Styles */
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.summary p {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.skills ul {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.skills strong {
+    font-weight: 700;
+}
+
+.skills li::before {
+    content: attr(data-label) ": ";
+    font-weight: 700;
+    color: #333;
+}
