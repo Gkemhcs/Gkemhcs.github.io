@@ -178,8 +178,8 @@
 /* Project Actions */
 .projectActions {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  flex-wrap: wrap;
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid #e9ecef;
@@ -188,50 +188,30 @@
 .architectureButton {
   background: linear-gradient(45deg, #28a745, #20c997);
   color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
+  width: 100%;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
 }
 
 .architectureButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
   color: white;
   text-decoration: none;
-}
-
-.githubButton {
-  background: #24292e;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: 1px solid #24292e;
-}
-
-.githubButton:hover {
   background: white;
-  color: #24292e;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(36, 41, 46, 0.3);
-  text-decoration: none;
-}
-
-.githubIcon {
-  width: 18px;
-  height: 18px;
+  color: #28a745;
+  border-color: #28a745;
 }
 
 /* Call to Action Section */
@@ -261,8 +241,7 @@
 .projectLinks {
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
+  margin-top: 1rem;
   justify-content: center;
 }
 
@@ -272,15 +251,16 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.875rem 1.5rem;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
-  width: 180px;
+  width: 100%;
   height: 52px;
   box-sizing: border-box;
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .githubLink {
@@ -358,6 +338,11 @@
 
 /* Responsive adjustments for project links */
 @media (max-width: 768px) {
+  .projectActions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
   .projectLinks {
     flex-direction: column;
     gap: 0.75rem;
@@ -402,10 +387,10 @@
   
   .projectActions {
     flex-direction: column;
+    gap: 0.75rem;
   }
   
-  .architectureButton,
-  .githubButton {
+  .architectureButton {
     justify-content: center;
   }
   

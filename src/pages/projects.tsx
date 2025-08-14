@@ -21,7 +21,7 @@ export default function Projects(): JSX.Element {
         "Performance & Scalability: Database connection pooling, optimized queries, and horizontal scaling capabilities"
       ],
       architectureImage: "/img/kavach-architecture.jpg",
-      githubLink: "https://github.com/Gkemhcs/kavach",
+      githubLink: "https://github.com/Gkemhcs/kavach-cli",
       documentationLink: "https://docs.kavach.gkem.cloud",
       category: "Secret Management Tool"
     },
@@ -42,7 +42,6 @@ export default function Projects(): JSX.Element {
         "Pluggable Cloud/Local File Storage: Unified interface to support GCP and local processing",
         "GitHub Actions CI: Automated test and build pipeline"
       ],
-      architectureImage: "/img/taskpilot-architecture.jpg",
       githubLink: "https://github.com/Gkemhcs/Taskpilot.git",
       category: "Backend System"
     },
@@ -76,17 +75,23 @@ export default function Projects(): JSX.Element {
       category: "E-commerce"
     },
     {
-      title: "Serverless MicroServices Deployment in Azure",
-      tools: ["Azure Functions", "Azure Container Instances", "Azure API Management", "Azure Monitor", "Azure DevOps", "Terraform"],
-      description: "Modern serverless microservices architecture deployed on Azure with comprehensive monitoring and CI/CD pipelines.",
+      title: "🚀 Serverless Microservices Deployment in Azure",
+      tools: ["Dapr (Distributed Application Runtime)", "Azure Container Apps",  "Azure PostgreSQL Flexible Server", "Azure Blob Storage", "Google Sign-In Authentication",   "AzureBicep"],
+      description: "A comprehensive serverless microservices architecture deployed on Azure, featuring text-to-speech, PDF-to-DOCX, and video-to-audio conversion services with secure file access and enterprise-grade infrastructure.",
       features: [
-        "Designed and implemented serverless microservices using Azure Functions and Azure Container Instances for optimal cost and performance.",
-        "Integrated Azure API Management for centralized API governance and security.",
-        "Implemented comprehensive monitoring with Azure Monitor and Application Insights for real-time observability.",
-        "Automated deployment pipelines using Azure DevOps and Terraform for infrastructure as code."
+        "Frontend Service: Seamless user interface that interacts with various backend services for operations and result display",
+        "Text-to-Speech Service: Converts user text to speech, uploads to Azure Blob Storage, and generates secure Shared Access Signatures (SAS) for time-limited access",
+        "PDF-to-DOCX Service: Handles PDF to DOCX conversion with secure file storage and SAS-based download access",
+        "Video-to-Audio Service: Transforms video files to audio format with secure storage and time-limited access",
+        "Dapr Integration: Facilitates service discovery and invocation, abstracting away infrastructure complexities for simplified microservices development",
+        "Azure File Shares: Ensures persistent and accessible file storage across all microservices for enhanced distributed storage",
+        "Azure PostgreSQL Flexible Server: Manages transactional data including usage statistics and signed URL records for insights and performance monitoring",
+        "Secure Authentication: Google Sign-In integration ensuring only authorized users can access the services",
+        "Azure Container Apps: Serverless deployment environment simplifying containerized application scaling and management",
+        "Azure Blob Storage: Secure file storage with SAS URL generation for controlled, time-limited file access"
       ],
-      architectureImage: "/img/azure-architecture.jpg",
-      githubLink: "https://github.com/Gkemhcs/azure-serverless-microservices",
+      architectureImage: "/img/azure-architecture-serverless.jpg",
+      githubLink: "https://github.com/Gkemhcs/converter-project-azure-serverless.git",
       category: "Serverless"
     }
   ];
