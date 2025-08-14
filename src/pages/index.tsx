@@ -16,251 +16,163 @@ export default function Home(): JSX.Element {
           <div className={styles.container}>
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
-                <h1 className={styles.heroTitle}>
-                  <span className={styles.gradientText}>Backend & DevOps Engineer</span>
-                  <br />
-                  <span className={styles.name}>Gudikoti Eswar Mani</span>
-                </h1>
-                <p className={styles.heroSubtitle}>
-                  Building enterprise-grade backend systems, cloud-native architectures, and 
-                  scalable infrastructure that powers millions of users
-                </p>
-                <div className={styles.heroStats}>
-                  <div className={styles.stat}>
-                    <span className={styles.statNumber}>500+</span>
-                    <span className={styles.statLabel}>LeetCode Problems</span>
-                  </div>
-                  <div className={styles.stat}>
-                    <span className={styles.statNumber}>10+</span>
-                    <span className={styles.statLabel}>Production Systems</span>
-                  </div>
-                  <div className={styles.stat}>
-                    <span className={styles.statNumber}>5+</span>
-                    <span className={styles.statLabel}>Cloud Platforms</span>
-                  </div>
-                </div>
-                <div className={styles.heroActions}>
-                  <a href="/projects" className={styles.primaryButton}>
-                    🚀 View My Work
-                  </a>
-                  <a href="/contact" className={styles.secondaryButton}>
-                    💼 Let's Collaborate
-                  </a>
-                </div>
-              </div>
-              <div className={styles.heroImage}>
-                <img src="/img/photo.jpg" alt="Gudikoti Eswar Mani" className={styles.profileImage} />
-                <div className={styles.statusBadge}>
-                  <span className={styles.statusDot}></span>
+                <h1>Gudikoti Eswar Mani</h1>
+                <h2>Backend & DevOps Engineer</h2>
+                <p>Expert in building scalable backend systems, deploying cloud-native applications, and architecting DevOps solutions. Proficient in both backend development and infrastructure deployment.</p>
+                <div className={styles.availability}>
+                  <span className={styles.availabilityDot}></span>
                   Available for opportunities
                 </div>
               </div>
+              <div className={styles.heroImage}>
+                <img src="/img/photo.jpg" alt="Gudikoti Eswar Mani" />
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Expertise Section */}
-        <section className={styles.expertise}>
+        {/* Professional Summary Section */}
+        <section className={styles.summary}>
           <div className={styles.container}>
-            <h2 className={styles.sectionTitle}>
-              <span className={styles.gradientText}>Technical Expertise</span>
-            </h2>
-            <div className={styles.expertiseGrid}>
-              <div className={styles.expertiseCard}>
-                <div className={styles.expertiseIcon}>⚙️</div>
-                <h3>Backend Engineering</h3>
-                <p>High-performance Go services, microservices architecture, REST/gRPC APIs, and event-driven systems</p>
-                <div className={styles.skills}>
-                  <span className={styles.skill}>Go (Golang)</span>
-                  <span className={styles.skill}>PostgreSQL</span>
-                  <span className={styles.skill}>Redis</span>
-                  <span className={styles.skill}>RabbitMQ</span>
-                  <span className={styles.skill}>gRPC</span>
-                </div>
+            <h2>Professional Summary</h2>
+            <div className={styles.summaryContent}>
+              <p>
+                I am a passionate Backend & DevOps Engineer with expertise in building scalable, 
+                production-ready systems. My focus is on backend development using Go (Golang), 
+                Python, and Node.js, with deep knowledge of cloud-native technologies and DevOps practices.
+              </p>
+              <p>
+                I specialize in designing and implementing microservices architectures, 
+                system design (HLD/LLD), and computational thinking for complex problem-solving. 
+                Successfully architected systems handling concurrent users, implemented distributed rate limiting, 
+                and designed scalable database schemas. My experience spans across Google Cloud Platform, Azure
+                with a keen interest in cloud-native tools and practices.
+              </p>
+              <p>
+                I have solved 300+ LeetCode problems, demonstrating strong problem-solving skills 
+                and algorithmic thinking. This foundation enables me to design efficient, 
+                scalable solutions for enterprise applications. I excel at system design, 
+                computational thinking, and translating algorithmic concepts into scalable backend architectures.
+                Successfully reduced cloud costs by 60% and improved build speeds by 50% through optimization techniques.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Skills & Technologies Section */}
+        <section className={styles.skills}>
+          <div className={styles.container}>
+            <h2>Skills & Technologies</h2>
+            
+            <div className={styles.skillsGrid}>
+              <div className={styles.skillCategory}>
+                <h3>Software Development & Core CS</h3>
+                <ul>
+                  <li><strong>Programming Languages:</strong> Golang, Python (Flask), Node.js, Bash</li>
+                  <li><strong>Core CS Subjects:</strong> Operating Systems, Computer Networks, DBMS</li>
+                  <li><strong>Problem Solving:</strong> 300+ LeetCode Problems, Algorithmic Thinking</li>
+                  <li><strong>System Design:</strong> HLD/LLD, Scalable Architectures, Microservices</li>
+                </ul>
               </div>
-              <div className={styles.expertiseCard}>
-                <div className={styles.expertiseIcon}>☁️</div>
+
+              <div className={styles.skillCategory}>
                 <h3>Cloud & DevOps</h3>
-                <p>Multi-cloud infrastructure, Kubernetes orchestration, CI/CD pipelines, and infrastructure as code</p>
-                <div className={styles.skills}>
-                  <span className={styles.skill}>Kubernetes</span>
-                  <span className={styles.skill}>Docker</span>
-                  <span className={styles.skill}>Terraform</span>
-                  <span className={styles.skill}>GCP/Azure</span>
-                  <span className={styles.skill}>GitHub Actions</span>
-                </div>
+                <ul>
+                  <li><strong>Cloud Platforms:</strong> Google Cloud Platform (GCP), Microsoft Azure</li>
+                  <li><strong>Kubernetes & Containers:</strong> Kubernetes, Docker, Helm, Istio, External Secrets</li>
+                  <li><strong>Infrastructure as Code:</strong> Terraform, Ansible, Crossplane, Bicep</li>
+                  <li><strong>CI/CD & GitOps:</strong> GitHub Actions, ArgoCD, Jenkins, Azure Pipelines, Cloud Build</li>
+                </ul>
               </div>
-              <div className={styles.expertiseCard}>
-                <div className={styles.expertiseIcon}>🏗️</div>
-                <h3>System Design</h3>
-                <p>Scalable architectures, distributed systems, high-level and low-level design, and performance optimization</p>
-                <div className={styles.skills}>
-                  <span className={styles.skill}>HLD/LLD</span>
-                  <span className={styles.skill}>Microservices</span>
-                  <span className={styles.skill}>Event Sourcing</span>
-                  <span className={styles.skill}>CQRS</span>
-                  <span className={styles.skill}>Load Balancing</span>
-                </div>
+
+              <div className={styles.skillCategory}>
+                <h3>Monitoring & Serverless</h3>
+                <ul>
+                  <li><strong>Monitoring & Observability:</strong> Prometheus, Grafana, OpenTelemetry, EFK Stack, Stackdriver</li>
+                  <li><strong>Serverless & Event-Driven:</strong> GCP Cloud Run, Cloud Functions, Azure Functions, Dapr, Container Apps</li>
+                  <li><strong>Security & Compliance:</strong> RBAC, OAuth 2.0, Secret Management, Audit Trails</li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Problem Solving Section */}
-        <section className={styles.problemSolving}>
+        {/* Technical Achievements Section */}
+        <section className={styles.technicalAchievements}>
           <div className={styles.container}>
-            <div className={styles.problemSolvingContent}>
-              <div className={styles.problemSolvingText}>
-                <h2 className={styles.sectionTitle}>
-                  <span className={styles.gradientText}>Problem Solver & Algorithm Expert</span>
-                </h2>
-                <p className={styles.problemSolvingDescription}>
-                  Mastered 500+ LeetCode problems across dynamic programming, graph algorithms, 
-                  system design, and data structures. Proven ability to tackle complex technical 
-                  challenges and optimize solutions for production environments.
-                </p>
-                <div className={styles.leetcodeStats}>
-                  <div className={styles.leetcodeStat}>
-                    <span className={styles.leetcodeNumber}>500+</span>
-                    <span className={styles.leetcodeLabel}>Problems Solved</span>
-                  </div>
-                  <div className={styles.leetcodeStat}>
-                    <span className={styles.leetcodeNumber}>95%</span>
-                    <span className={styles.leetcodeLabel}>Success Rate</span>
-                  </div>
-                  <div className={styles.leetcodeStat}>
-                    <span className={styles.leetcodeNumber}>4.8★</span>
-                    <span className={styles.leetcodeLabel}>Average Rating</span>
-                  </div>
-                </div>
-                <a href="https://leetcode.com/gudikotieswarmani" target="_blank" rel="noopener noreferrer" className={styles.leetcodeButton}>
-                  🏆 View LeetCode Profile
-                </a>
+            <h2>Technical Achievements & Impact</h2>
+            <div className={styles.achievementsGrid}>
+              <div className={styles.achievementCard}>
+                <h3>🏗️ System Architecture</h3>
+                <p>Designed and implemented distributed rate limiting systems, scalable microservices architectures, and optimized database schemas for high-performance applications.</p>
               </div>
-              <div className={styles.problemSolvingVisual}>
-                <div className={styles.codeWindow}>
-                  <div className={styles.codeHeader}>
-                    <span className={styles.codeDot}></span>
-                    <span className={styles.codeDot}></span>
-                    <span className={styles.codeDot}></span>
-                  </div>
-                  <div className={styles.codeContent}>
-                    <pre className={styles.code}>
-{`// System Design: Rate Limiter
-type RateLimiter struct {
-    requests map[string][]time.Time
-    limit    int
-    window   time.Duration
-}
-
-func (rl *RateLimiter) Allow(key string) bool {
-    now := time.Now()
-    if requests, exists := rl.requests[key]; exists {
-        // Clean old requests
-        valid := filterValidRequests(requests, now, rl.window)
-        if len(valid) >= rl.limit {
-            return false
-        }
-        rl.requests[key] = append(valid, now)
-    } else {
-        rl.requests[key] = []time.Time{now}
-    }
-    return true
-}`}
-                    </pre>
-                  </div>
-                </div>
+              <div className={styles.achievementCard}>
+                <h3>⚡ Performance Optimization</h3>
+                <p>Achieved 50% improvement in Docker build speeds using BuildKit caching, implemented efficient caching strategies, and optimized database queries for better response times.</p>
+              </div>
+              <div className={styles.achievementCard}>
+                <h3>💰 Cost Optimization</h3>
+                <p>Successfully reduced cloud infrastructure costs by 60% through workload right-sizing, autoscaling policies, and efficient resource utilization across GCP and Azure.</p>
+              </div>
+              <div className={styles.achievementCard}>
+                <h3>🔄 Infrastructure Migration</h3>
+                <p>Led complete migration from GCP to Azure with zero downtime, leveraging containers and serverless technologies while maintaining system reliability and performance.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Featured Projects */}
+        {/* Featured Projects Section */}
         <section className={styles.featuredProjects}>
           <div className={styles.container}>
-            <h2 className={styles.sectionTitle}>
-              <span className={styles.gradientText}>Featured Projects</span>
-            </h2>
-            <div className={styles.projectShowcase}>
-              <div className={styles.mainProject}>
-                <div className={styles.projectContent}>
-                  <h3>🛡️ Kavach - Enterprise Secrets Management</h3>
-                  <p>Production-grade secrets management platform with multi-cloud integration, 
-                     OAuth 2.0, RBAC, and comprehensive audit trails. Built with Go, PostgreSQL, 
-                     and modern DevOps practices.</p>
-                  <div className={styles.projectActions}>
-                    <a href="https://docs.kavach.gkem.cloud" target="_blank" rel="noopener noreferrer" className={styles.projectButton}>
-                      📚 View Documentation
-                    </a>
-                    <a href="https://github.com/Gkemhcs/kavach" target="_blank" rel="noopener noreferrer" className={styles.projectButton}>
-                      🔗 GitHub
-                    </a>
-                  </div>
+            <h2>Featured Projects</h2>
+            <div className={styles.projectGrid}>
+              <div className={styles.projectCard}>
+                <h3>🛡️ Kavach - Secret Management Platform</h3>
+                <p>Enterprise-grade secrets management with multi-cloud integration, built with Go, PostgreSQL, and comprehensive security features.</p>
+                <div className={styles.projectLinks}>
+                  <a href="https://github.com/Gkemhcs/kavach" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                    View on GitHub
+                  </a>
+                  <a href="https://docs.kavach.gkem.cloud" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                    Documentation
+                  </a>
                 </div>
               </div>
-              <div className={styles.projectGrid}>
-                <div className={styles.projectCard}>
-                  <h4>⚙️ TaskPilot</h4>
-                  <p>Production backend system with Go, PostgreSQL, RabbitMQ, and Prometheus</p>
-                  <a href="https://github.com/Gkemhcs/Taskpilot.git" target="_blank" rel="noopener noreferrer">View Project →</a>
-                </div>
-                <div className={styles.projectCard}>
-                  <h4>🔄 Microservices Converter</h4>
-                  <p>Go-based microservices with gRPC, Kubernetes, and observability stack</p>
-                  <a href="https://github.com/Gkemhcs/microservices-converter-golang-grpc.git" target="_blank" rel="noopener noreferrer">View Project →</a>
-                </div>
-                <div className={styles.projectCard}>
-                  <h4>🛒 Vikraya E-commerce</h4>
-                  <p>Multi-cluster GKE deployment with Anthos Service Mesh and monitoring</p>
-                  <a href="https://github.com/Gkemhcs/vikraya-ecommerce.git" target="_blank" rel="noopener noreferrer">View Project →</a>
+
+              <div className={styles.projectCard}>
+                <h3>⚙️ TaskPilot - Backend System</h3>
+                <p>Production-grade backend system with Go, PostgreSQL, JWT authentication, and RabbitMQ messaging.</p>
+                <div className={styles.projectLinks}>
+                  <a href="https://github.com/Gkemhcs/Taskpilot.git" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                    View on GitHub
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Quick Links */}
+        {/* Quick Links Section */}
         <section className={styles.quickLinks}>
           <div className={styles.container}>
-            <h2 className={styles.sectionTitle}>
-              <span className={styles.gradientText}>Explore My Work</span>
-            </h2>
+            <h2>Quick Navigation</h2>
             <div className={styles.linksGrid}>
-              <a href="/projects" className={styles.linkCard}>
-                <div className={styles.linkIcon}>🚀</div>
-                <h3>All Projects</h3>
-                <p>Complete portfolio of backend systems and cloud solutions</p>
+              <a href="/projects" className={styles.quickLink}>
+                <h3>View All Projects</h3>
+                <p>Explore my complete portfolio of backend systems and DevOps solutions</p>
               </a>
-              <a href="/experience" className={styles.linkCard}>
-                <div className={styles.linkIcon}>💼</div>
-                <h3>Experience</h3>
-                <p>Professional journey and technical achievements</p>
+              <a href="/experience" className={styles.quickLink}>
+                <h3>Professional Experience</h3>
+                <p>Learn about my work history and achievements in backend development</p>
               </a>
-              <a href="/certifications" className={styles.linkCard}>
-                <div className={styles.linkIcon}>🏆</div>
+              <a href="/certifications" className={styles.quickLink}>
                 <h3>Certifications</h3>
-                <p>Google Cloud and industry-recognized credentials</p>
+                <p>View my cloud platform and technology certifications</p>
               </a>
-              <a href="/contact" className={styles.linkCard}>
-                <div className={styles.linkIcon}>📧</div>
+              <a href="/contact" className={styles.quickLink}>
                 <h3>Get In Touch</h3>
-                <p>Let's discuss your next backend or DevOps project</p>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Call to Action */}
-        <section className={styles.cta}>
-          <div className={styles.container}>
-            <h2>Ready to Build Something Amazing?</h2>
-            <p>Let's collaborate on your next enterprise backend system, cloud infrastructure, or DevOps automation project.</p>
-            <div className={styles.ctaActions}>
-              <a href="/contact" className={styles.ctaPrimary}>
-                🚀 Start a Project
-              </a>
-              <a href="/projects" className={styles.ctaSecondary}>
-                📋 View Portfolio
+                <p>Ready to discuss opportunities or collaborations</p>
               </a>
             </div>
           </div>

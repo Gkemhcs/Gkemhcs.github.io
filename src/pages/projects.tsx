@@ -94,7 +94,7 @@ export default function Projects(): JSX.Element {
   return (
     <Layout
       title="Projects - Gudikoti Eswar Mani"
-      description="Explore my portfolio of backend systems, cloud infrastructure, and DevOps projects including Kavach, TaskPilot, and microservices solutions."
+      description="Explore my portfolio of backend systems, cloud infrastructure, and DevOps projects. Each project demonstrates system design principles, scalability considerations, and production-ready implementation patterns."
     >
       <KavachAlert />
       <main className={styles.main}>
@@ -102,7 +102,7 @@ export default function Projects(): JSX.Element {
         <section className={styles.header}>
           <div className={styles.container}>
             <h1>My Projects</h1>
-            <p>Explore my latest work in cloud architecture, microservices, and DevOps implementations</p>
+            <p>Explore my portfolio of backend systems, cloud infrastructure, and DevOps projects. Each project demonstrates system design principles, scalability considerations, and production-ready implementation patterns.</p>
           </div>
         </section>
 

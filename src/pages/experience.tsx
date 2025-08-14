@@ -130,6 +130,14 @@ export default function Experience(): JSX.Element {
             <h2>Core Competencies</h2>
             <div className={styles.skillsCategories}>
               <div className={styles.skillCategory}>
+                <h3>System Design & Problem Solving</h3>
+                <p>Strong foundation in HLD/LLD, scalable architectures, and solving 300+ LeetCode problems</p>
+              </div>
+              <div className={styles.skillCategory}>
+                <h3>Development</h3>
+                <p>Strong background in Python, Golang, and cloud-native application development</p>
+              </div>
+              <div className={styles.skillCategory}>
                 <h3>Cloud & Infrastructure</h3>
                 <p>Expertise in GCP and Azure, Kubernetes orchestration, and infrastructure automation</p>
               </div>
@@ -140,10 +148,6 @@ export default function Experience(): JSX.Element {
               <div className={styles.skillCategory}>
                 <h3>Monitoring & Observability</h3>
                 <p>Experience with Prometheus, OpenTelemetry, and comprehensive logging solutions</p>
-              </div>
-              <div className={styles.skillCategory}>
-                <h3>Development</h3>
-                <p>Strong background in Python, Golang, and cloud-native application development</p>
               </div>
             </div>
           </div>

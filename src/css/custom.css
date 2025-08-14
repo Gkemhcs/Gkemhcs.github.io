@@ -256,3 +256,67 @@ a:hover {
     transform: translateX(0);
   }
 }
+
+/* Custom Navbar Styling */
+.navbar__item.navbar__link {
+  transition: all 0.3s ease;
+}
+
+.navbar__item.navbar__link:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Social Links Styling */
+.navbar__item.navbar__link[href*="github"] {
+  background: linear-gradient(135deg, #24292e 0%, #586069 100%);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid #586069;
+}
+
+.navbar__item.navbar__link[href*="github"]:hover {
+  background: linear-gradient(135deg, #586069 0%, #24292e 100%);
+  box-shadow: 0 4px 12px rgba(36, 41, 46, 0.3);
+}
+
+.navbar__item.navbar__link[href*="linkedin"] {
+  background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  border: 1px solid #00a0dc;
+}
+
+.navbar__item.navbar__link[href*="linkedin"]:hover {
+  background: linear-gradient(135deg, #00a0dc 0%, #0077b5 100%);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
+
+.navbar__item.navbar__link[href*="leetcode"] {
+  background: linear-gradient(135deg, #ffa116 0%, #fbbf24 100%);
+  color: #1f2937 !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 1px solid #fbbf24;
+}
+
+.navbar__item.navbar__link[href*="leetcode"]:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #ffa116 100%);
+  box-shadow: 0 4px 12px rgba(255, 161, 22, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar__item.navbar__link[href*="github"],
+  .navbar__item.navbar__link[href*="linkedin"],
+  .navbar__item.navbar__link[href*="leetcode"] {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

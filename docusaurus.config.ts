@@ -8,6 +8,51 @@ const config: Config = {
   title: 'Gudikoti Eswar Mani - Backend & DevOps Engineer',
   tagline: 'Enterprise-grade backend systems, cloud infrastructure, and DevOps automation',
   favicon: 'img/favicon.ico',
+  
+  // Additional favicon configurations
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/img/favicon.ico',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/img/favicon-32x32.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/img/favicon-16x16.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/img/apple-touch-icon.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/img/site.webmanifest',
+      },
+    },
+  ],
 
   // Set the production url of your site here
   url: 'https://gkem.cloud',
@@ -71,6 +116,11 @@ const config: Config = {
           label: 'LinkedIn',
           position: 'right',
         },
+        {
+          href: 'https://leetcode.com/u/gudikotieswarmani',
+          label: 'LeetCode',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -111,6 +161,10 @@ const config: Config = {
             {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/in/gkemhcs',
+            },
+            {
+              label: 'LeetCode',
+              href: 'https://leetcode.com/u/gudikotieswarmani',
             },
             {
               label: 'Medium',
