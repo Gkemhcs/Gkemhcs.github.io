@@ -177,7 +177,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Gudikoti Eswar Mani. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Gudikoti Eswar Mani.`,
     },
     prism: {
       theme: prismThemes.github,
