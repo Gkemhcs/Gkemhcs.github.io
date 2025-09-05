@@ -131,7 +131,7 @@ export default function Home(): JSX.Element {
                 <h3>🛡️ Kavach - Secret Management Platform</h3>
                 <p>Enterprise-grade secrets management with multi-cloud integration, built with Go, PostgreSQL, and comprehensive security features.</p>
                 <div className={styles.projectLinks}>
-                  <a href="https://github.com/Gkemhcs/kavach" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                  <a href="https://github.com/Gkemhcs/kavach-cli" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
                     View on GitHub
                   </a>
                   <a href="https://docs.kavach.gkem.cloud" target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
